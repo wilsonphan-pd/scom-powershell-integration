@@ -6,7 +6,7 @@ This integration uses the powershell command line function within Microsoft Syst
 ## Setup
 
 ### Step 1 - SCOM Channel
-In the Operations Console, head to Administration and create a new Command Notification Channel. When prompted for the following Settings information in the Command Notification Channel, provide the following values. Be sure to input your variables for the "File", "RoutingKey", and "Logfile" parameters. More information on those below:
+In the Operations Console, head to Administration and create a new Command Notification Channel. When prompted for the following Settings information in the Command Notification Channel, provide the following values. Be sure to input your variables for the "File", "RoutingKey", and "Logfile" parameters. More information on those in the notes below.
 
 	Full Path of the Command File:		C:\windows\system32\windowspowershell\v1.0\powershell.exe
 	Command Line Parameters:		-File "PATHTOSCRIPT" -AlertID "$Data[Default='NotPresent']/Context/DataItem/AlertId$" -RoutingKey "YOURROUTINGKEY" -$logfile "PATHTOLOGFILE"
@@ -31,7 +31,7 @@ In the Operations Console, create a Subscription. When prompted for the settings
 	
 
 #### Note
-Parameters:
+Step 1 Parameters:
 
 	File: This is the path to the "pagerduty.ps1" file. 
 	Logfile: This is the path to the log file.
