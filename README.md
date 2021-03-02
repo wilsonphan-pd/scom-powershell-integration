@@ -32,6 +32,7 @@ In the Operations Console, create a Subscription. When prompted for the settings
 
 #### Note
 Parameters:
+
 	File: This is the path to the "pagerduty.ps1" file. 
 	Logfile: This is the path to the log file.
 	RoutingKey: This is your Integration Key from pager duty. More info below.
